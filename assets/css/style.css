@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*for wrapper*/
+.wrapper {
+  max-width: 1350px;
+  width: 86%;
+  margin: 0 auto;
+}
+
+/*=================================
+  Header styling starts here
+=================================*/
+
+/*=================================
+  Header styling ends here
+=================================*/
+
+/*=================================
+  main styling starts here
+=================================*/
+
+/*=================================
+  main styling ends here
+=================================*/
+
+/*=================================
+  footer styling starts here
+=================================*/
+
+/*=================================
+  footer styling ends here
+=================================*/
+
+/*media query starts*/
+/*media query for 995px starts here*/
+@media only screen and (max-width: 995px) {
+}
