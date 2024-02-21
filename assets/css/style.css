@@ -33,6 +33,7 @@ a {
   gap: 20px;
   overflow-x: auto;
   scrollbar-width: none;
+  margin-bottom: 15px;
 }
 
 .image-list li,
@@ -90,6 +91,42 @@ a {
 
 .next::after {
   content: "\f054";
+}
+
+.icon:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  scale: 1.1;
+  cursor: pointer;
+}
+
+.scrollbar {
+  height: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scrollbar-track {
+  height: 2px;
+  width: 100%;
+  background: #ccc;
+  position: relative;
+  border-radius: 5px;
+}
+
+.scrollbar-thumb {
+  height: 100%;
+  width: 50%;
+  background: #000;
+  position: absolute;
+  cursor: grab;
+}
+
+.scrollbar-track:hover .scrollbar-thumb {
+  height: 4px;
+  top: -1px;
 }
 
 /*media query starts*/
