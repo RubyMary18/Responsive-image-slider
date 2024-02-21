@@ -13,35 +13,84 @@ a {
 }
 
 /*for wrapper*/
-.wrapper {
+.image-slider-wrapper {
   max-width: 1350px;
   width: 86%;
   margin: 0 auto;
+  position: relative;
 }
 
-/*=================================
-  Header styling starts here
-=================================*/
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
 
-/*=================================
-  Header styling ends here
-=================================*/
+.image-list {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
 
-/*=================================
-  main styling starts here
-=================================*/
+.image-list li,
+.image-list li img {
+  width: 250px;
+  height: 250px;
+}
 
-/*=================================
-  main styling ends here
-=================================*/
+.image-list li img {
+  object-fit: cover;
+}
 
-/*=================================
-  footer styling starts here
-=================================*/
+.arrow-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+}
 
-/*=================================
-  footer styling ends here
-=================================*/
+.arrow-container li span {
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  background: #000;
+  border-radius: 50%;
+  text-indent: -9999px;
+  position: relative;
+}
+
+.prev {
+  left: -20px;
+}
+
+.next {
+  right: -20px;
+}
+
+.icon::after {
+  content: "h";
+  font-family: "FontAwesome";
+  text-indent: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #fff;
+  transform: translate(-50%, -50%);
+}
+
+.prev::after {
+  content: "\f053";
+}
+
+.next::after {
+  content: "\f054";
+}
 
 /*media query starts*/
 /*media query for 995px starts here*/
