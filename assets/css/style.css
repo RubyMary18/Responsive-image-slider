@@ -66,11 +66,11 @@ a {
   position: relative;
 }
 
-.prev {
+#prev {
   left: -20px;
 }
 
-.next {
+#next {
   right: -20px;
 }
 
@@ -85,11 +85,11 @@ a {
   transform: translate(-50%, -50%);
 }
 
-.prev::after {
+#prev::after {
   content: "\f053";
 }
 
-.next::after {
+#next::after {
   content: "\f054";
 }
 
